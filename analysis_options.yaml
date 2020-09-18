@@ -1,6 +1,9 @@
 # Defines a default set of lint rules enforced for projects at Google. For
 # details and rationale, see https://github.com/dart-lang/pedantic.
 include: package:pedantic/analysis_options.yaml
+analyzer:
+  enable-experiment:
+    - non-nullable
 linter:
   rules:
     - always_declare_return_types
